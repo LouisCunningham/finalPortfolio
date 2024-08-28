@@ -12,9 +12,24 @@
     
 }
 body{
-  background: radial-gradient(circle at 0% 20%, #ffffff 10%, #e6e0dc 80%);
-  background-position: sticky;
+  /* background: rgb(255,248,237);
+background: linear-gradient(180deg, rgba(255,248,237,1) 0%, rgba(184,158,143,1) 83%); */
       
+}
+.text-off-white{
+  color: #F4EDE4;
+}
+.profile-card{
+  border-radius: 50px;
+background: linear-gradient(145deg, #e6dfd5, #fffffe);
+box-shadow:  20px 20px 46px #b3aea6,
+             -20px -20px 46px #ffffff;
+             transition: 0.2s;
+}
+.profile-card:hover{
+  box-shadow: inset 20px 20px 46px #b3aea6,
+            inset -20px -20px 46px #ffffff;
+            cursor: pointer;
 }
 .space-grotesk-font {
     font-family: "Space Grotesk", sans-serif;

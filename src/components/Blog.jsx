@@ -53,8 +53,8 @@ const Blog = () => {
           />
 
           <div>
-            <p className="mt-6 text-sm text-blue-500 uppercase">{mainContent.intro.text}</p>
-            <h1 className="max-w-lg mt-4 text-2xl font-semibold leading-tight text-gray-800 dark:text-white">
+            <p className="mt-6 text-sm text-gray-500 uppercase space-grotesk-font">{mainContent.intro.text}</p>
+            <h1 className="max-w-lg mt-4 text-2xl font-semibold leading-tight text-gray-800 dark:text-white space-grotesk-font">
               {mainContent.intro.heading}
             </h1>
 
@@ -65,7 +65,7 @@ const Blog = () => {
                 alt={mainContent.author.image.alt}
               />
               <div className="mx-4">
-                <h1 className="text-sm text-gray-700">{mainContent.author.name}</h1>
+                <h1 className="text-sm text-gray-700 roboto-mono-font">{mainContent.author.name}</h1>
                 <p className="text-sm text-gray-500">{mainContent.author.role}</p>
               </div>
             </div>
@@ -76,10 +76,10 @@ const Blog = () => {
         <div className="mt-8 lg:w-1/4 lg:mt-0 lg:px-6">
           {sidebarContent.map((item, index) => (
             <div key={index}>
-              <h3 className="text-blue-500 capitalize">{item.title}</h3>
+              <h3 className="text-gray-500 capitalize space-grotesk-font">{item.title}</h3>
               <a
                 href="#"
-                className="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500"
+                className="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 roboto-mono-font"
               >
                 {item.description}
               </a>
@@ -92,6 +92,7 @@ const Blog = () => {
       </div>
     </div>
 </section>
+<hr className="my-20 pt-20 shadow-lg" />
     </>
   )
 }

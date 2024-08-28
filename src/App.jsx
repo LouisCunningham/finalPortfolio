@@ -1,34 +1,22 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Portfolio from "./components/Portfolio";
-
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
-import Skills from "./components/Skills";
-import Pricing from "./components/Pricing";
+import {
+  Route, 
+  createBrowserRouter, 
+  createRoutesFromElements,
+  RouterProvider
+} from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import MainLayout from './Layouts/MainLayout';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 
+const router = createBrowserRouter(
+  // creates the route that leads to the HomePage by using index, otherwise path="/" would be used
+  createRoutesFromElements(<Route index element={<HomePage /> } />)
+);
 
 function App() {
- 
-
-  return (
-    <>
-    <Navbar />
-    <div className="bg-secondary mx-auto">
-      
-    <Hero />
-     <Portfolio />
-     <Skills />
-    
-     <Pricing  />
-     <Blog />
-    </div>
-    <Contact />
-    </>
-  )
-}
+  return <RouterProvider router={router} /> ;
+};
 
 export default App

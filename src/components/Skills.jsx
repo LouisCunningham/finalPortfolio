@@ -94,21 +94,21 @@ const skills = [
 const Skills = () => {
   return (
     <>
-      <section >
+      <section id='skills'>
       <div className="container px-6 py-10 mx-auto">
       <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl text-center space-grotesk-font">
         Core <br /> Skills & 
-        <span className="underline decoration-blue-500"> Languages</span>
+        <span className="underline decoration-gray-500"> Languages</span>
       </h1>
 
-      <p className="mt-4 text-gray-500 xl:mt-6 text-center dark:text-gray-300 roboto-mono-font">
+      <p className="mt-4 text-gray-500 xl:mt-6 text-center dark:text-gray-300 roboto-mono-font pb-10">
       Showcasing a diverse skill set in modern web development technologies, tools, and frameworks, built to deliver innovative and efficient solutions.
       </p>
 
-      <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3 roboto-mono-font">
+      <div className=" grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3 roboto-mono-font">
         {skills.map((skill, index) => (
-          <div key={index} className="space-y-3">
-            <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full">
+          <div key={index} className="space-y-3 p-8  shadow-lg rounded-2xl w-100 mb-6 md:mb-2 profile-card">
+            <span className="inline-block p-3 text-gray-500 bg-blue-100 rounded-full">
               {skill.icon}
             </span>
 
@@ -124,6 +124,7 @@ const Skills = () => {
       </div>
     </div>
 </section>
+<hr className="my-20 pt-20 shadow-lg" />
     </>
   )
 }
