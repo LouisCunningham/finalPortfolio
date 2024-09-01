@@ -1,4 +1,5 @@
 import React, {useEffect,useState} from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import profilePhoto from "../assets/profile.png"
 
 const Hero = () => {
@@ -76,7 +77,7 @@ const Hero = () => {
             Follow
         </button>
         <button type="button" className="w-1/2 px-4 py-2 text-base text-white bg-gray-500 border rounded-lg hover:bg-black  animate-wiggle animate-thrice animate-ease-in-out animate-normal hover:animate-jump">
-            CV/Resume
+            <a href='#portfolio' >CV/RESUME</a>
         </button>
     </div>
 </div>

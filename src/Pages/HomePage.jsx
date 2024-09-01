@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Portfolio from "../components/Portfolio";
 import Blog from "../components/Blog";
@@ -11,7 +10,7 @@ import Timeline from '../components/Timeline';
 const HomePage = () => {
   return (
     <div>
-    <Navbar />
+    
     <div className="bg-secondary mx-auto">
       
     <Hero />
