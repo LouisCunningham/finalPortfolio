@@ -26,15 +26,15 @@ const currentPricing = isMonthly ? pricingData.monthly : pricingData.yearly;
     
   return (
     <>
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white ">
     <div className="container px-6 py-8 mx-auto">
         <div className="sm:flex sm:items-center sm:justify-between">
             <div>
-                <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-gray-100 space-grotesk-font">Simple, transparent pricing</h2>
+                <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl  space-grotesk-font">Simple, transparent pricing</h2>
                 
             </div>
 
-            <div className="overflow-hidden p-0.5 mt-6 border rounded-lg dark:border-gray-700">
+            <div className="overflow-hidden p-0.5 mt-6 border rounded-lg ">
                 <div className="sm:-mx-0.5 flex">
                     <button onClick={togglePricing} className={`${isMonthly ? 'bg-black' :'bg-gray-200'}  focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-white rounded-lg space-grotesk-font`}>Monthly</button>
                     <button onClick={togglePricing} className={`${isMonthly ? 'bg-black' :'bg-gray-200'}  focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-white rounded-lg space-grotesk-font`}>One Time</button>
