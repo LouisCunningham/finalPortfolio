@@ -1,6 +1,6 @@
 import {
   Route, 
-  createBrowserRouter, 
+  createHashRouter, 
   createRoutesFromElements,
   RouterProvider
 } from 'react-router-dom';
@@ -14,7 +14,7 @@ import ContactPage from './Pages/ContactPage';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   // creates the route that leads to the HomePage by using index, otherwise path="/" would be used
   createRoutesFromElements(
   <Route basename="/finalPortfolio/" path='/' element={<MainLayout />} >
