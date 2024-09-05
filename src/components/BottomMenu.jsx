@@ -30,7 +30,7 @@ const BottomMenu = () => {
   };
 
   return (
-    <div className="bottomContainer">
+    <div className="bottomContainer hidden lg:block">
       <ul className={`navMenu ${isActive ? 'active' : ''}`}>
         <div className='menuToggle' onClick={handleButtonClick}>
           <IonIcon name="add-outline" />

@@ -253,7 +253,7 @@ z-index: 1000000;
   .navMenu{
     display: flex;
     position:relative;
-    width: 100vw;
+    width: 100%;
     min-height: 150vh;
     display: flex;
     top:200%;
