@@ -73,7 +73,7 @@ const Hero = () => {
             <a href="https://github.com/LouisCunningham" target="_blank">Follow</a>
         </button>
         <button type="button" className="w-1/2 px-4 py-2 text-base text-white bg-gray-500 border rounded-lg hover:bg-black  animate-wiggle animate-thrice animate-ease-in-out animate-normal hover:animate-jump">
-            <a href='src/assets/lcResume2024.pdf' download='Louis C. Resume' >CV/RESUME</a>
+            <a href='../assets/lcResume2024.pdf' download='Louis C. Resume' >CV/RESUME</a>
         </button>
     </div>
 </div>
