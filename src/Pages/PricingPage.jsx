@@ -37,7 +37,7 @@ const currentPricing = isMonthly ? pricingData.monthly : pricingData.yearly;
             <div className="overflow-hidden p-0.5 mt-6 border rounded-lg dark:border-gray-700">
                 <div className="sm:-mx-0.5 flex">
                     <button onClick={togglePricing} className={`${isMonthly ? 'bg-black' :'bg-gray-200'}  focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-white rounded-lg space-grotesk-font`}>Monthly</button>
-                    <button onClick={togglePricing} className={`${isMonthly ? 'bg-gray-200' :'bg-black'}  focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-white rounded-lg space-grotesk-font`}>One Time</button>
+                    <button onClick={togglePricing} className={`${isMonthly ? 'bg-black' :'bg-gray-200'}  focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-white rounded-lg space-grotesk-font`}>One Time</button>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ const ContactPage = () => {
     <>
       <section className="min-h-screen bg-white ">
     <div className="container px-6 py-10 mx-auto">
-        <div className="lg:flex lg:items-center lg:-mx-10 profile-card">
+        <div className="p-5 lg:flex lg:items-center lg:-mx-10 profile-card">
             <div className="lg:w-1/2 lg:mx-10">
                 <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl space-grotesk-font">Let’s talk</h1>
 
