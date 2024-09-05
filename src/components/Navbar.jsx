@@ -45,8 +45,8 @@ const Navbar = () => {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img alt="" src={logo} className="h-20 w-20" />
+            
+            <img alt="company logo" src={logo} className="h-20 w-40" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -62,15 +62,15 @@ const Navbar = () => {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:underline cursor-pointer" >
-              <NavLink to='/'>Home / About</NavLink>
-              <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
+              <NavLink to='/'>Home</NavLink>
+             
             </PopoverButton>
 
-            <PopoverPanel
+            {/* <PopoverPanel
               transition
               className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
-              <div className="p-4">
+               <div className="p-4">
                 {products.map((item) => (
                   <div
                     key={item.name}
@@ -88,7 +88,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> 
               <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                 {callsToAction.map((item) => (
                   <a
@@ -101,7 +101,7 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
-            </PopoverPanel>
+            </PopoverPanel> */}
           </Popover>
 
           <NavLink to="/pricing" smooth={true} duration={500} className="text-sm font-semibold leading-6 text-gray-900 hover:underline cursor-pointer">
@@ -110,16 +110,14 @@ const Navbar = () => {
           <NavLink to="/blog" smooth={true} duration={500} className="text-sm font-semibold leading-6 text-gray-900 hover:underline cursor-pointer">
            Blog
           </NavLink>
-          <NavLink to="contact" smooth={true} duration={500} className="text-sm font-semibold leading-6 text-gray-900 hover:underline cursor-pointer">
+          <NavLink to="/contact" smooth={true} duration={500} className="text-sm font-semibold leading-6 text-gray-900 hover:underline cursor-pointer">
             Contact
           </NavLink>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Social Media <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+        
       </nav>
+
+
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -146,7 +144,7 @@ const Navbar = () => {
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    Home / About
+                    Home
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
@@ -181,14 +179,7 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Social Media
-                </a>
-              </div>
+              
             </div>
           </div>
         </DialogPanel>

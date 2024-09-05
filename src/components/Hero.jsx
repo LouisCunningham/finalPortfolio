@@ -1,5 +1,6 @@
 import React, {useEffect,useState} from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { blogPosts } from '../components/data';
 import profilePhoto from "../assets/profile.png"
 
 const Hero = () => {
@@ -45,7 +46,7 @@ const Hero = () => {
                     Louis Cunningham
                 </p>
                 <p className="text-xs text-gray-400">
-                    FullStack dev
+                    Front-End Dev
                 </p>
             </div>
             <div className="w-full p-4 bg-blue-100 rounded-lg ">
@@ -53,28 +54,23 @@ const Hero = () => {
                     <p className="flex sm:flex-col flex-col mx-1">
                         Articles
                         <span className="font-bold text-black dark:text-indigo-500">
-                            34
+                            {blogPosts.length}
                         </span>
                     </p>
                     <p className="flex flex-col mx-1">
                         Followers
                         <span className="font-bold text-black dark:text-indigo-500">
-                            455
+                            919
                         </span>
                     </p>
-                    <p className="flex flex-col">
-                        Rating
-                        <span className="font-bold text-black dark:text-indigo-500">
-                            9.3
-                        </span>
-                    </p>
+                    
                 </div>
             </div>
         </div>
     </div>
     <div className="flex items-center justify-between gap-4 mt-6">
-        <button type="button" className="w-1/2 px-4 py-2 text-base bg-white border rounded-lg text-grey-500 hover:bg-gray-200 ">
-            Follow
+        <button  type="button" className="w-1/2 px-4 py-2 text-base bg-white border rounded-lg text-grey-500 hover:bg-gray-200 ">
+            <a href="https://github.com/LouisCunningham" target="_blank">Follow</a>
         </button>
         <button type="button" className="w-1/2 px-4 py-2 text-base text-white bg-gray-500 border rounded-lg hover:bg-black  animate-wiggle animate-thrice animate-ease-in-out animate-normal hover:animate-jump">
             <a href='#portfolio' >CV/RESUME</a>

@@ -2,10 +2,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaintBrush, faCode, faMicrochip} from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import IonIcon from '@reacticons/ionicons';
 const skills = [
     {
         icon: (
-           <FontAwesomeIcon icon={faCode} className="w-6 h-6"/>
+           <IonIcon name='logo-html5' className="w-6 h-6"/>
         ),
         title: "HTML",
         description:
@@ -13,7 +14,7 @@ const skills = [
       },
       {
         icon: (
-            <FontAwesomeIcon icon={faPaintBrush} className="w-6 h-6"/>
+          <IonIcon name='logo-css3' className="w-6 h-6"/>
         ),
         title: "CSS",
         description:
@@ -21,7 +22,7 @@ const skills = [
       },
       {
         icon: (
-            <FontAwesomeIcon icon={faMicrochip} className="w-6 h-6"/>
+          <IonIcon name='logo-javascript' className="w-6 h-6"/>
           
         ),
         title: "JavaScript",
@@ -30,9 +31,7 @@ const skills = [
       },
       {
         icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-          </svg>
+          <IonIcon name='logo-react' className="w-6 h-6"/>
         ),
         title: "React",
         description:
@@ -50,9 +49,7 @@ const skills = [
       },
       {
         icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 2a2 2 0 012-2h8a2 2 0 012 2v20a2 2 0 01-2 2H8a2 2 0 01-2-2V2z" />
-          </svg>
+          <IonIcon name='logo-wordpress' className="w-6 h-6"/>
         ),
         title: "WordPress",
         description:
@@ -60,9 +57,7 @@ const skills = [
       },
       {
         icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h10M7 16h10" />
-          </svg>
+          <IonIcon name='logo-sass' className="w-6 h-6"/>
         ),
         title: "Sass",
         description:

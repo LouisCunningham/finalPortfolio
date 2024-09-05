@@ -10,7 +10,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import PricingPage from './Pages/PricingPage';
 import BlogPage from './Pages/BlogPage';
 import BlogPostPage from './components/BlogPostPage';
-
+import ContactPage from './Pages/ContactPage';
+import NotFoundPage from './Pages/NotFoundPage';
 
 
 const router = createBrowserRouter(
@@ -21,6 +22,8 @@ const router = createBrowserRouter(
     <Route path='/pricing' element={<PricingPage />} />
     <Route path='/blog' element={<BlogPage />} />
     <Route path="/blog/:id" element={<BlogPostPage />} />
+    <Route path='/contact' element={<ContactPage />} />
+    <Route path='*' element={<NotFoundPage />} />
   </Route>
 )
 );
