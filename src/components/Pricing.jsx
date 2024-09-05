@@ -10,12 +10,12 @@ const Pricing = () => {
   return (
     <div className="  min-h-screen ">
       <div className="container px-6 py-8 mx-auto min-h-full h-100 object-center ">
-        <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white space-grotesk-font">Available Plans</h1>
+        <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl  space-grotesk-font">Available Plans</h1>
      
 
         <div className="grid grid-cols-1 gap-8 mt-6 lg:grid-cols-3 xl:mt-12">
           <div
-            className={`flex items-center justify-between px-8 py-4 border cursor-pointer rounded-xl dark:border-gray-700 ${selectedPlan === 'Basic' ? 'border-black profile-card' : ''}`}
+            className={`flex items-center justify-between px-8 py-4 border cursor-pointer rounded-xl  ${selectedPlan === 'Basic' ? 'border-black profile-card' : ''}`}
             onClick={() => handlePlanSelect('Basic')}
           >
             <div className="flex flex-col items-center space-y-1">
@@ -26,30 +26,30 @@ const Pricing = () => {
             </div>
             <div className="flex flex-col items-center space-y-1">
               
-              <h2 className="text-2xl font-semibold dark:text-blue-500 sm:text-3xl roboto-mono-font">$499 <span className="text-base font-medium roboto-mono-font">(One Time)</span></h2>
+              <h2 className="text-2xl font-semibold  sm:text-3xl roboto-mono-font">$499 <span className="text-base font-medium roboto-mono-font">(One Time)</span></h2>
             </div>
           </div>
 
           <div
-            className={`flex items-center justify-between px-8 py-4 border cursor-pointer rounded-xl dark:border-gray-700 ${selectedPlan === 'Standard' ? 'border-black profile-card' : ''}`}
+            className={`flex items-center justify-between px-8 py-4 border cursor-pointer rounded-xl  ${selectedPlan === 'Standard' ? 'border-black profile-card' : ''}`}
             onClick={() => handlePlanSelect('Standard')}
           >
             <div className="flex flex-col items-center space-y-1">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-600 dark:text-blue-500 sm:h-7 sm:w-7" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-600  sm:h-7 sm:w-7" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <h2 className="text-lg font-medium text-gray-700 sm:text-xl  roboto-mono-font">Standard</h2>
             </div>
             <div className="flex flex-col items-center space-y-1">
-              <div className="px-2 text-xs text-gray-400 bg-gray-100 rounded-full dark:text-blue-400 sm:px-4 sm:py-1 dark:bg-gray-700 roboto-mono-font">
+              <div className="px-2 text-xs text-gray-400 bg-gray-100 rounded-full  sm:px-4 sm:py-1  roboto-mono-font">
                 99$/ Monthly
               </div>
-              <h2 className="text-2xl font-semibold text-gray-400 dark:text-blue-500 sm:text-3xl roboto-mono-font">$999 <span className="text-base font-medium roboto-mono-font">(One Time)</span></h2>
+              <h2 className="text-2xl font-semibold text-gray-400  sm:text-3xl roboto-mono-font">$999 <span className="text-base font-medium roboto-mono-font">(One Time)</span></h2>
             </div>
           </div>
 
           <div
-            className={`flex items-center justify-between px-8 py-4 border cursor-pointer rounded-xl dark:border-gray-700 ${selectedPlan === 'Pro' ? 'border-black profile-card' : ''}`}
+            className={`flex items-center justify-between px-8 py-4 border cursor-pointer rounded-xl  ${selectedPlan === 'Pro' ? 'border-black profile-card' : ''}`}
             onClick={() => handlePlanSelect('Pro')}
           >
             <div className="flex flex-col items-center space-y-1">
@@ -63,7 +63,7 @@ const Pricing = () => {
               <div className="px-2 text-xs text-gray-500 bg-gray-100 rounded-full dark:text-blue-400 sm:px-4 sm:py-1 dark:bg-gray-700 roboto-mono-font">
                 $1999 (One Time)
               </div>
-              <h2 className="text-2xl font-semibold text-gray-500 sm:text-3xl dark:text-gray-300 roboto-mono-font">$149<span className="text-base font-medium roboto-mono-font">/Month</span></h2>
+              <h2 className="text-2xl font-semibold text-gray-500 sm:text-3xl  roboto-mono-font">$149<span className="text-base font-medium roboto-mono-font">/Month</span></h2>
             </div>
           </div>
         </div>

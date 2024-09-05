@@ -24,12 +24,13 @@ const BlogPage = () => {
                 />
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
-                  <a
+                  <Link
+                  to={`/blog/${post.id}`}
                     href="#"
                     className="text-xl font-semibold text-gray-800 hover:underline  roboto-mono-font"
                   >
                     {post.title}
-                  </a>
+                  </Link>
                   <div>
                   <Link to={`/blog/${post.id}`} className="active:text-rose-700 font-semibold text-rose-500 transition duration-100 hover:text-rose-600 roboto-mono-font">Read more</Link>
                 </div>
