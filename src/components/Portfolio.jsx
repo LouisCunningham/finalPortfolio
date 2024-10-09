@@ -11,6 +11,7 @@ import spaceX from '../assets/spaceXClone.png';
 import minesweeperImage from '../assets/minesweeper.png';
 import relaxationAppImage from '../assets/relax.png';
 import starbucksCloneImage from '../assets/starbucks.png';
+import cryptoAppImage from '../assets/crypto.png';
 
 
 const Portfolio = () => {
@@ -26,6 +27,13 @@ const Portfolio = () => {
       imageUrl: starbucksCloneImage,
       link: 'https://codepen.io/LouisC27/pen/ExomrWm',
     },    
+    {
+      category: 'Api Based',
+      title: 'Crypto Price Tracking App',
+      description: 'This project is a dynamic and responsive crypto price tracking application built with React, utilizing the CoinGecko API to provide real-time cryptocurrency data. The app features an interactive user interface that displays the latest prices, market trends, and historical data for a wide range of cryptocurrencies. Google Charts are integrated to visualize market movements and performance trends, making it easy for users to track and analyze their favorite coins. The project showcases proficiency in API integration, state management, and the use of modern development tools such as Vite for fast build processes. Optimized for performance and designed with a clean, user-friendly layout, this app is a practical example of building functional and visually appealing web applications with React.',
+      imageUrl: cryptoAppImage,
+      link: 'https://louiscunningham.github.io/CryptoTracker/'
+    },
     {
       category: 'JavaScript',
       title: 'Relaxation App',
@@ -49,7 +57,7 @@ const Portfolio = () => {
     },
     {
       category: 'Vanilla JS',
-      title: 'Neumorphic Calculator',
+      title: 'Neumorphism Calculator',
       description: 'This project is a visually appealing calculator built using HTML, CSS, and JavaScript, featuring a sleek neumorphic design. The interface mimics soft, raised surfaces and subtle shadows, creating a modern and minimalist user experience. The calculator performs basic arithmetic functions with smooth animations and responsive button clicks. The project demonstrates expertise in CSS for implementing the neumorphism design trend, along with JavaScript for handling calculations and user interactions',
       imageUrl: neuCalc,
       link:'https://codepen.io/LouisC27/pen/wvjjejj',
